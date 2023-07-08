@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Agregar Estacion</title>
+		
+		<!--css-->
+		<link type="text/css" rel="stylesheet" href="/css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--bootstrap-->
+	   
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+<body>
+	<div id="header">
+		
+		<a href="/"  id="logo-img"><img class="ui image" src="/images/logo3.png"></a>
+		<p >AGREGAR ESTACIÓN</p >	
+	</div>
+	<div id="header-boton">
+	
+			<a href="/gestionEstaciones"  id="back-img"><img class="ui image" src="/images/back-arrow.png"></a>
+
+	</div>
+	<div id="formAgregar">
+		<form class="form" action= "/agregarEstacion">
+				<div  id= "agregar">
+					<label  for="nombre">Numero de Serie: &nbsp &nbsp </label id="labelAgregarUsuario">
+					<input  type="number" name="numeroSerie"/>
+				</div>
+				
+				<div id= "agregar" >
+					<label  for="apellido">Coordenadas: &nbsp &nbsp &nbsp &nbsp&nbsp</label>
+					<input id= "agregar" type="text" name="coordenadas"/>
+				</div id= "agregar">
+				
+				<div id= "agregar">
+					<label for="contraseña">Capacidad: &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp</label>
+					<select name="capacidad">
+					<option>5</option>
+					<option>10</option>
+					</select>
+				</div>
+				<input type="submit" class="btn-dtl" value="Enviar"/>
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Detalles De Bicicleta</title>
+		
+		<!--css-->
+		<link type="text/css" rel="stylesheet" href="/css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--bootstrap-->
+	   
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+<body>
+	<div id="header">
+		
+		<a href="/"  id="logo-img"><img class="ui image" src="/images/logo3.png"></a>
+		<p > DETALLES DE LA BICICLETA</p >
+				
+	</div>
+	<div id="header-boton" >
+		<a href="/gestionBicicletas"  id="back-img"><img class="ui image" src="/images/back-arrow.png"></a>
+	</div>
+	
+	<div>
+			<section>
+				<table class="table" >
+					<thead>
+						<tr >
+							<td id="tabla">NUMERO DE SERIE</td>
+							<td id="tabla">MODELO</td>
+							<td id="tabla"> FECHA DE ALTA</td>
+							<td id="tabla"> ESTADO</td>
+						</tr>
+					<thead>
+					{{#bicicleta}}
+					<tbody>
+						<tr>
+							<td id ="fila_tabla">{{numeroSerie}} </td>
+							<td id ="fila_tabla">{{modelo}}</td>
+							<td id ="fila_tabla">{{fechaAlta}}</td>
+							<td id ="fila_tabla">{{estado}}</td>
+
+							</td>
+						</tr>
+					</tbody>
+					{{/bicicleta}}
+				</table>
+			</section>
+		</div>
+		<div class="en-linea">
+				<div class="transiciones">
+					<p>LISTADO DE TRANSICIONES DE ESTADO:</p>
+					<div class="estados">
+						<br>
+						<p> SIN BASE<p>
+						<br>
+						<p> &#8595 </p>
+						<br>
+						{{#bicicleta}}
+						{{#estacion}}
+						<p> EN BASE (ID: {{numeroSerie}})<p>
+						<br>
+						<p> &#8595 </p>
+						<br>
+						{{/estacion}}
+						{{/bicicleta}}
+						<p> BAJA<p>
+					</div class="estados">
+				</div>
+		</div>
+</body>
+</html>

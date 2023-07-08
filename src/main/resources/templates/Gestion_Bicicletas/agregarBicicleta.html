@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Agregar Bicicleta</title>
+		
+		<!--css-->
+		<link type="text/css" rel="stylesheet" href="/css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--bootstrap-->
+	   
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+<body>
+	<div id="header">
+		
+		<a href="/"  id="logo-img"><img class="ui image" src="/images/logo3.png"></a>
+		<p >AGREGAR BICICLETA</p >	
+	</div>
+	<div id="header-boton" >
+		<a href="/gestionBicicletas"  id="back-img"><img class="ui image" src="/images/back-arrow.png"></a>
+	</div>
+	<div id="formAgregar">
+		<form class="form" action= "/agregarBicicleta">
+				<div  id= "agregar">
+					<label  for="numeroSerie">Numero de Serie: &nbsp &nbsp </label id="labelAgregarUsuario">
+					<input  type="text" name="numeroSerie"/>
+				</div>
+				<div  id= "agregar">
+					<label  for="modelo">Modelo: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label id="labelAgregarUsuario">
+					<input  type="text" name="modelo"/>
+				</div>
+				<input type="submit" class="btn-dtl" value="Enviar"/>
+	</div>
+	
+	
+</body>
+</html>
